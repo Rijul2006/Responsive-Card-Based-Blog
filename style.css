@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    width:100vw;
+}
+.maincontainer{
+    height:100vh;
+    width:100%;
+    overflow-x: hidden;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    gap: 2rem;
+}
+
+.paraone{
+    width:90%;
+    max-width: 700px;
+    text-align:center;
+    font-size: 1.7rem;
+    color: rgb(78, 74, 74);
+    text-shadow: 5px 5px 15px black;
+}
+.container{
+    width:90% ;
+    max-width: 1200px;
+    height:auto;
+    max-width: 1100px;
+     display:grid;
+     gap:2rem;
+     grid-template-columns: repeat(4,1fr);
+     justify-content: center;
+}
+.maincontainer h1{
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+.items{
+    /* width:30%; */
+    height: 33rem;
+    min-width: 20rem;
+    min-height: 25rem;
+    border:1px solid black;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 20px 5px black;
+    transition: all 1s linear 0.1s;
+}
+.items:hover{
+    transform: scale(1.2);
+}
+.items img{
+   width:100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height:60%;
+    min-height:25px;
+}
+.box{
+    /* height:50%; */
+    display:flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    gap:20px;
+    
+}
+.box p{
+    font-size:1.2rem;
+    color:rgb(53, 51, 51);
+    overflow-wrap: break-word;
+}
+.leftBox{
+    display:flex;
+    align-items:center;
+    font-size: smaller;
+}
+.leftBox img{
+    width:4em;
+    height:4em;
+}
+.one{
+    display: flex;
+    flex-direction:column;
+}
+.one a{
+    font-size:1.2rem;
+    text-decoration: none;
+    color:#7F7FD5;
+}
+.BoxItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+}
+.rightBox{
+    border: 1px solid black;
+    padding:2px;
+    border-radius: 3px;
+}
+
+@media (max-width:1400px){
+.container{   
+     grid-template-columns: repeat(3,1fr);
+}
+}
+
+@media (max-width:1050px){
+.container{
+     grid-template-columns: repeat(2,1fr);
+     
+}
+}
+
+@media (max-width:700px){
+.container{
+     grid-template-columns: repeat(1,1fr);
+     
+}
+}
