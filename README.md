@@ -1,4 +1,4 @@
-# 🚀 The Syntax Script | Modern Blog UI
+#  Responsive-Card-Based-Blog
 
 A fully responsive, aesthetically pleasing blog landing page. This project demonstrates advanced CSS techniques including Grid layouts, Flexbox alignment, and interactive hover animations.
 
